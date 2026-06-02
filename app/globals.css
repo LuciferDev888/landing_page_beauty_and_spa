@@ -9,15 +9,20 @@
   --color-charcoal: #1C1917;
   --font-serif: var(--font-cormorant), serif;
   --font-sans: var(--font-montserrat), sans-serif;
-  
+
   --animate-fade-in: fade-in 1s ease-out forwards;
   --animate-slide-up: slide-up 0.8s ease-out forwards;
   --animate-glow: glow 2s ease-in-out infinite alternate;
 }
 
 @keyframes fade-in {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes slide-up {
@@ -25,6 +30,7 @@
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -35,22 +41,28 @@
   from {
     box-shadow: 0 0 10px rgba(197, 168, 128, 0.2);
   }
+
   to {
     box-shadow: 0 0 25px rgba(197, 168, 128, 0.6);
   }
 }
 
 :root {
-  --background: #F3EFE9; /* deeper beige for higher contrast */
-  --foreground: #1C1917; /* dark charcoal for high readability */
+  --background: #F3EFE9;
+  /* deeper beige for higher contrast */
+  --foreground: #1C1917;
+  /* dark charcoal for high readability */
   --card-background: #ffffff;
   --border-color: rgba(197, 168, 128, 0.25);
 }
 
 .dark {
-  --background: #0C0A09; /* luxury obsidian dark background */
-  --foreground: #F5F5F4; /* soft light stone text */
-  --card-background: #1C1917; /* dark charcoal for cards */
+  --background: #0C0A09;
+  /* luxury obsidian dark background */
+  --foreground: #F5F5F4;
+  /* soft light stone text */
+  --card-background: #1C1917;
+  /* dark charcoal for cards */
   --border-color: rgba(197, 168, 128, 0.15);
 }
 
@@ -83,6 +95,7 @@ body {
 .gold-border-hover {
   transition: all 0.3s ease;
 }
+
 .gold-border-hover:hover {
   border-color: #C5A880;
   box-shadow: 0 0 15px rgba(197, 168, 128, 0.2);
